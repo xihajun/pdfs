@@ -47,15 +47,15 @@ window.addRequireLoadCallback(function() {
     window.configureRequire(requireConfig, {
         sentryDSN: "",
         requireFallbackBaseUrl: "https://www.dropboxstatic.com/",
-        langpack: {locale: "zh_CN", pageLoadServerTimestamp: 1695735507 },
+        langpack: {locale: "zh_CN", pageLoadServerTimestamp: 1695735549 },
         useReactNext: false ,
-        exceptionExtras: {"page_repo_rev":"a413d88352165157dad8bb53f42a27312771955e","yaps_deployment":"prod","yaps_project":"edison_atlasservlet.file_viewer-edison","page_locale":"zh_CN","page_load_timestamp":1695735507},
-        exceptionTags: ["is_edison","browser-id:46509815401222636855466777367113244545","edison_page_name:scl_file_page","edison_atlasservlet:file_viewer","edison_atlasservlet:file_viewer:prod"],
+        exceptionExtras: {"page_repo_rev":"a413d88352165157dad8bb53f42a27312771955e","yaps_deployment":"canary","yaps_project":"edison_atlasservlet.file_viewer-edison","page_locale":"zh_CN","page_load_timestamp":1695735549},
+        exceptionTags: ["is_edison","browser-id:46509815401222636855466777367113244545","edison_page_name:scl_file_page","edison_atlasservlet:file_viewer","edison_atlasservlet:file_viewer:canary"],
     }, []);
     var start = performance.now();
     window.require(["metaserver/static/js/edison/init_edison_page"], function(mod) {
         window.EDISON_METRICS_INIT_PAGE_MODULE_LOAD_TIME = performance.now() - start;
-        mod.initPage("EgtmaWxlX3ZpZXdlchoNc2NsX2ZpbGVfcGFnZTIpL2Uvc2NsL2ZpL2VvczkybzJmZ3lzNmdrMGdpem9nbC9sZWMwNS5wZGZKC2ZpbGVfdmlld2VyUg1zY2xfZmlsZV9wYWdlYihhNDEzZDg4MzUyMTY1MTU3ZGFkOGJiNTNmNDJhMjczMTI3NzE5NTVlaigzNzI2ZGJkNGYxN2I4Yzk0ZTljMTFiMzM4ZTE4NTU0Y2EzYTQ5ZmVhcAF6BHByb2SyAQkvZHdzMi9ycGPKATRtZXRhc2VydmVyL3N0YXRpYy9qcy9maWxlX3ZpZXdlci9lZGlzb24vc2NsL3NjbF9maWxl4gFlaHR0cHM6Ly93d3cuZHJvcGJveC5jb20vZS9zY2wvZmkvZW9zOTJvMmZneXM2Z2swZ2l6b2dsL2xlYzA1LnBkZj9ybGtleT0yaG9odmk4amN2anczZjhtOHZ1Z2ZhMm16JmRsPTDqAWNodHRwczovL3d3dy5kcm9wYm94LmNvbS9zY2wvZmkvZW9zOTJvMmZneXM2Z2swZ2l6b2dsL2xlYzA1LnBkZj9ybGtleT0yaG9odmk4amN2anczZjhtOHZ1Z2ZhMm16JmRsPTDwAQGIAgGQAgGaAiYKImVuYWJsZV9wcm9tcHRfbm9uX21hZXN0cm9fcHJlZmV0Y2gQAQ==");
+        mod.initPage("EgtmaWxlX3ZpZXdlchoNc2NsX2ZpbGVfcGFnZTIpL2Uvc2NsL2ZpL2VvczkybzJmZ3lzNmdrMGdpem9nbC9sZWMwNS5wZGZKC2ZpbGVfdmlld2VyUg1zY2xfZmlsZV9wYWdlYihhNDEzZDg4MzUyMTY1MTU3ZGFkOGJiNTNmNDJhMjczMTI3NzE5NTVlaigzNzI2ZGJkNGYxN2I4Yzk0ZTljMTFiMzM4ZTE4NTU0Y2EzYTQ5ZmVhcAF6BmNhbmFyebIBCS9kd3MyL3JwY8oBNG1ldGFzZXJ2ZXIvc3RhdGljL2pzL2ZpbGVfdmlld2VyL2VkaXNvbi9zY2wvc2NsX2ZpbGXiAWVodHRwczovL3d3dy5kcm9wYm94LmNvbS9lL3NjbC9maS9lb3M5Mm8yZmd5czZnazBnaXpvZ2wvbGVjMDUucGRmP3Jsa2V5PTJob2h2aThqY3ZqdzNmOG04dnVnZmEybXomZGw9MOoBY2h0dHBzOi8vd3d3LmRyb3Bib3guY29tL3NjbC9maS9lb3M5Mm8yZmd5czZnazBnaXpvZ2wvbGVjMDUucGRmP3Jsa2V5PTJob2h2aThqY3ZqdzNmOG04dnVnZmEybXomZGw9MPABAYgCAZACAZoCJgoiZW5hYmxlX3Byb21wdF9ub25fbWFlc3Ryb19wcmVmZXRjaBAB");
     });
 });
 </script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
@@ -100,7 +100,21 @@ window.addRequireLoadCallback(function() {
 </script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
     window.require(["js/edison/edison"], function (edisonModule) {
         edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/campaigns_orchestration", "json", "{\"CAMPAIGNS_ORCHESTRATION_CLIENT_ROLLOUT\": true}");
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/file_viewer_configuration", "json", "{\"proto\": \"\"}");
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/deleted_files", "json", "{\"DELETED_FROM_FILTER_DEFAULT\": false}");
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/publish", "json", "{\"PUBLISH_NEW_FEATURE_TEST\": \"OFF\"}");
         });
     });
 });
@@ -121,42 +135,7 @@ window.addRequireLoadCallback(function() {
 </script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
     window.require(["js/edison/edison"], function (edisonModule) {
         edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/viewer", "json", "{\"DEFAULT_ROOT_NAME\": \"Dropbox\", \"PERSONAL_ROLE_STRING\": \"\\u4e2a\\u4eba\", \"_viewer_properties\": {\"_user_data\": [], \"_additional_linked_users_data\": [], \"is_team_assume_user_session\": false, \"is_assume_user_session\": false}, \"prompt_ha_hiding\": true, \"LOCALE\": \"GB\"}");
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/contacts", "json", "{\"LEGACY_CACHE_LIMIT\": \"OFF\", \"MERGE_SEARCH_ALLOWED\": {}}");
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/publish", "json", "{\"PUBLISH_NEW_FEATURE_TEST\": \"OFF\"}");
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/sharing", "json", "{\"GOLDEN_GATE\": {\"HAS_CONTENT_MANAGER_AND_SUPER_ADMIN\": {}, \"HAS_CONTENT_MANAGER_CDM\": {}, \"HAS_CONTENT_MANAGER_CDM_IN_TSD\": {}, \"HAS_NEW_OWNERSHIP_MODEL\": {}, \"CAN_RESTORE_FOLDERS_IN_CM\": {}, \"SHARING_TOTAL_LIMIT\": 1000}, \"SHARING_EXPERIMENTS\": {\"FIX_MAX_ACCOUNT_BATCH_SIZE\": false, \"USER_LEVEL_SHARING_SETTINGS\": \"OFF\"}, \"SHARING_MODAL\": {\"SHOW_UPGRADE_TO_BIZ_BANNER\": {}}, \"TRUELINK\": {\"TRUELINK_BROWSE_LINK_ICON\": {}, \"NO_COMMENT_ENABLED\": {}}, \"ShareTibActionOriginType\": {\"BROWSE_FILE_ROW\": 1, \"FILE_ROW_SHARE_MENU\": 2, \"PREVIEW_PAGE\": 3, \"NOTIFICATION_WEB\": 4, \"RECENTS\": 5, \"SHARE\": 6, \"GRANT_ACCESS\": 8, \"DESKTOP_CLIENT\": 9, \"WIZARD\": 10, \"OFFICE_INTEGRATION\": 11, \"LEGACY_BROWSE\": 12, \"SHARE_LINK_MODAL\": 13, \"BROWSE_SHARED_FOLDER_BANNER\": 14, \"BROWSE_GLOBAL_ACTIONS\": 15, \"EVENTS_PAGE\": 16, \"BROWSE_FILE_ACTIONS\": 17, \"CONTENT_MANAGER\": 18, \"PARENT_FOLDER_MODAL\": 19, \"OUT_OF_QUOTA_MODAL\": 20, \"LINKS_PAGE\": 21, \"PREVIEW_PAGE_FACEPILE\": 22, \"BROWSE_FILE_FACEPILE\": 23, \"SHARE_PAGE_FROM_EMAIL\": 24, \"SHARE_PAGE_FROM_NOTIFICATION_WEB\": 25, \"COPY_SCL_LINK_MODAL\": 26, \"BROWSE_NEW_FOLDER_MODAL\": 27, \"STARRED\": 28, \"AUTO_MOUNT\": 29, \"BROWSE_FILE_ROW_BUTTON\": 30, \"BROWSE_FILE_ROW_OVERFLOW_MENU\": 31, \"EXTERNAL_SHARING_PAGE\": 32, \"SHARE_TO_UPLOAD\": 35, \"COPY_LINK_FROM_UPLOAD_MODAL\": 36, \"SHARING_PREVIEW_PAGE\": 37, \"SHARE_PAGE_INLINE\": 38, \"POST_DOWNLOAD_MODAL\": 40, \"FILE_REQUESTS\": 42, \"BROWSE_COPY_ACTION\": 43, \"BROWSE_MOVE_ACTION\": 44, \"FROM_EMAIL\": 45, \"REQUEST_ACCESS_MODAL\": 46, \"CREATE_SHARED_FOLDER_MODAL\": 47, \"DEFAULT_SHARING_SETTINGS_TAB\": 48, \"SAVE_TO_DROPBOX\": 49, \"PREVIEW_PAGE_FILE_ROW_OVERFLOW_MENU\": 50, \"PREVIEW_PAGE_FILE_ROW_BUTTON\": 51, \"JOIN_FOLDER_BUTTON\": 52, \"PREVIEW_PAGE_GRID_SINGLE_FILE_ACTION\": 53, \"PREVIEW_PAGE_TITLEBAR\": 54, \"HARMONY\": 101, \"NOTIFICATION_CLIENT\": 102, \"NATIVE_SHARE_CLIENT\": 103, \"FILESYSTEM\": 104, \"NOTIFICATION_MOBILE\": 201, \"WEB_MOBILE\": 202, \"IN_APP\": 210, \"EMAIL\": 301, \"GMAIL_PLUGIN\": 302, \"OUTLOOK_ADDIN\": 303, \"PAPER_INTEGRATION\": 401, \"GOOGLE_DSS\": 501, \"TRELLO_FILE_VIEWER\": 601, \"SHARING_SDK_SANDBOX\": 700, \"SHARING_SDK_PAPER\": 701, \"SHARING_SDK_DESKTOP\": 702, \"CONTROLLED_ACCESS_SU_BANNER\": 803, \"UPLOAD_BUTTON\": 804, \"UPLOAD_JOIN_FOLDER_MODAL\": 805, \"UPLOAD_SNACKBAR\": 806, \"COLLECTIONS\": 903}}");
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/file_actions", "json", "{\"BATCH_FILEOPS_PARALLEL_AWAIT\": false}");
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/file_viewer_configuration", "json", "{\"proto\": \"\"}");
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/files_spa", "json", "{\"USE_FOR_YOU_PAGE\": false, \"USE_MULTIPRODUCT_ONBOARDING_FOR_YOU_PAGE\": false, \"USE_RR_FOR_PREVIEW_STANDALONE\": false, \"TTVC_SYNTHETIC_RENDER\": \"OFF\", \"CONTENT_SUGGESTIONS_CVC_MEASUREMENT\": false, \"BROWSE_FACEPILE_CVC_MEASUREMENT\": false, \"BROWSE_FILES_TABLE_CVC_MEASUREMENT\": false, \"BROWSE_USE_REACT_QUERY\": false, \"USE_SPA_PREVIEW_CAROUSEL\": false, \"PHOTOS_USE_REACT_QUERY\": false, \"BROWSE_USE_FILEGPT_ENTRYPOINT\": false, \"BROWSE_USE_FILEGPT_IN_SIDEBAR\": false, \"USE_MAF_FOR_FILE_VIEWER\": false, \"USE_SHARE_BUTTON_DISPLAY\": false, \"USE_SPA_FOR_SIGNATURES\": false}");
         });
     });
 });
@@ -184,21 +163,21 @@ window.addRequireLoadCallback(function() {
 </script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
     window.require(["js/edison/edison"], function (edisonModule) {
         edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/page_load", "json", "{\"COUNTRY_OVERRIDE\": \"\", \"PUBLIC_MODE_OVERRIDE\": null, \"REPO_REV\": \"b15c69df079e17a5e6810dd4dccbbdced1c01731\", \"HOSTNAME\": \"atlas-data-modules-live-control-pdx-6b9fcf4f7d-c2hh2\", \"YAPS_DEPLOYMENT\": \"prod\", \"YAPS_PROJECT\": \"edison_atlasservlet.file_viewer-edison\", \"PAGE_LOCALE\": \"zh_CN\", \"SESSION_ID\": \"46509815401222636855466777367113244545\", \"IS_SELENIUM_TEST\": false}");
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/page_load", "json", "{\"COUNTRY_OVERRIDE\": \"\", \"PUBLIC_MODE_OVERRIDE\": null, \"REPO_REV\": \"b15c69df079e17a5e6810dd4dccbbdced1c01731\", \"HOSTNAME\": \"atlas-data-modules-live-prod-pdx-569f8c7fdf-x9khd\", \"YAPS_DEPLOYMENT\": \"canary\", \"YAPS_PROJECT\": \"edison_atlasservlet.file_viewer-edison\", \"PAGE_LOCALE\": \"zh_CN\", \"SESSION_ID\": \"46509815401222636855466777367113244545\", \"IS_SELENIUM_TEST\": false}");
         });
     });
 });
 </script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
     window.require(["js/edison/edison"], function (edisonModule) {
         edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/python", "json", "{\"FILE_ACTIVITY_LOADING_MODE\": {\"FEEDBACK\": \"FEEDBACK\", \"PREVIEW_INFO\": \"PREVIEW_INFO\", \"FEEDBACK_METADATA\": \"FEEDBACK_METADATA\", \"USER_I18N\": \"USER_I18N\"}, \"RECENT_EVENT_TYPES\": {\"FILE_ADD\": 0, \"FILE_MOVE\": 1, \"FILE_EDIT\": 2, \"FILE_RENAME\": 3, \"FILE_RESTORE\": 4, \"FILE_MOUNT\": 5, \"FILE_UNMOUNT\": 6, \"FILE_SHARE\": 7, \"FILE_UNSHARE\": 8, \"FILE_PRIVATE_VIEW\": 9, \"FILE_SHARED_VIEW\": 10, \"FILE_COMMENT_ADD\": 11, \"PAPER_ADD\": 12, \"PAPER_EDIT\": 13, \"PAPER_COMMENT\": 14, \"PAPER_SHARE\": 15, \"PAPER_VIEW\": 16, \"FILE_SHARED_ADD\": 17, \"FILE_DELETE\": 18}, \"RECENT_EVENT_FILTER_TYPE\": {\"ALL\": 0, \"PHOTOS\": 1, \"VIDEOS\": 2, \"DOCUMENTS\": 3, \"COMMENTS\": 4, \"JUNK\": 5, \"UNCATEGORIZED\": 6, \"VISUAL_NOTES\": 7}, \"THUMBNAIL_SIZE_MODE\": {\"EXACT\": 1, \"STRICT\": 2, \"ABSTRACT\": 3, \"FIT_ONE\": 4, \"ORIGINAL\": 5, \"LEGACY\": 6, \"FIT_ONE_ABSTRACT\": 7, \"CUSTOM\": 8, \"FIT_ONE_RESTRICT\": 9, \"EXACT_NO_BACKGROUND\": 10, \"STRETCH\": 11}, \"THUMBNAIL_SIZES\": [\"16x16\", \"32x32\", \"48x48\", \"64x64\", \"70x70\", \"72x72\", \"75x75\", \"80x80\", \"100x100\", \"122x122\", \"128x128\", \"150x150\", \"154x154\", \"160x160\", \"154x274\", \"154x308\", \"178x178\", \"180x180\", \"196x196\", \"200x200\", \"224x224\", \"256x256\", \"256x456\", \"256x512\", \"274x154\", \"308x154\", \"318x416\", \"320x240\", \"320x320\", \"320x480\", \"320x568\", \"320x640\", \"360x360\", \"380x380\", \"359x100\", \"375x100\", \"392x392\", \"456x256\", \"478x267\", \"470x300\", \"480x320\", \"480x480\", \"512x256\", \"512x512\", \"568x320\", \"640x320\", \"640x384\", \"640x480\", \"640x640\", \"640x1136\", \"640x1280\", \"720x720\", \"718x200\", \"750x200\", \"784x784\", \"800x600\", \"960x640\", \"1024x768\", \"1024x1024\", \"1136x640\", \"1280x640\", \"1280x960\", \"1600x1200\", \"2048x1536\", \"800x800\", \"1280x1280\", \"2048x2048\", \"750x500\", \"1000x500\", \"1250x500\", \"1500x500\", \"1750x500\", \"2000x500\", \"256x1\", \"480x1\", \"720x1\", \"1280x1\", \"1600x1\", \"2048x1\", \"1200x1200\", \"1200x600\", \"3200x2400\"], \"FILE_REQUEST_NO_DEADLINE\": -1, \"REVISION_REASON\": {\"ADD\": 0, \"MOVE\": 1, \"EDIT\": 2, \"RENAME\": 3, \"RESTORE\": 4, \"MOUNT\": 5, \"UNMOUNT\": 6, \"SHARE\": 7, \"UNSHARE\": 8, \"DELETE\": 9, \"PREV_PURGED\": 10}, \"ACCOUNT_CAPTURE\": {\"OFF\": 0, \"INVITED_ONLY\": 1, \"ALL\": 2}, \"DOMAIN_VERIFICATION_STATUS\": {\"ERROR_VERIFYING\": 1, \"PENDING\": 2, \"VERIFYING\": 3, \"VERIFIED\": 4, \"ALREADY_CLAIMED\": 5}, \"MILLION_USER_COUNT\": \"500\", \"PUBLIC_DFB_COUNT\": \"400,000\", \"EU_COUNTRIES\": [\"hr\", \"tr\", \"mc\", \"ae\", \"fr\", \"kg\", \"ye\", \"ro\", \"ir\", \"nl\", \"mt\", \"be\", \"mk\", \"rs\", \"dk\", \"it\", \"es\", \"uz\", \"jo\", \"by\", \"lb\", \"ge\", \"gr\", \"lt\", \"om\", \"bg\", \"hu\", \"lu\", \"tm\", \"sm\", \"is\", \"ua\", \"pt\", \"pl\", \"gb\", \"sk\", \"al\", \"at\", \"me\", \"de\", \"kw\", \"qa\", \"ru\", \"ba\", \"cy\", \"sa\", \"li\", \"no\", \"cz\", \"lv\", \"ee\", \"md\", \"pk\", \"si\", \"se\", \"am\", \"az\", \"iq\", \"ad\", \"ch\", \"il\", \"ie\", \"fi\", \"af\"], \"SIGN_UP_FOR_TEAM_ONBOARDING_STATES\": {\"EmailVerification\": 0, \"Register\": 5, \"DesktopIntro\": 10, \"SetupSecondAccount\": 15, \"DesktopMigrationOption\": 20, \"ReturnToClient\": 25, \"EnterWorkEmail\": 30, \"TeamDiscovery\": 50, \"CreateTeam\": 100, \"InviteMembers\": 200, \"WaitJoinApproval\": 250, \"ClientInstall\": 300, \"BizUpsellInterstitial\": 310, \"ProUpsellInterstitial\": 320, \"DesktopDone\": 400, \"Done\": 10000}, \"USER_JOURNEY_SIGNUP_VARIANTS\": [\"VERIFY_EMAIL_ONLY\", \"ET_FREE\", \"ET_TRIAL\", \"ET_WORK\", \"BIZ_UPSELL_INTERSTITIAL\", \"PRO_UPSELL_INTERSTITIAL\", \"ON\"], \"TEAM_JOIN_SOURCE\": {\"NO_SOURCE\": 0, \"SHARED_LINK\": 1, \"SF_INVITE\": 2, \"FORCED_MIGRATION\": 3, \"DOMAIN_CAPTURE\": 4, \"SHARED_CONTENT_LINK\": 5, \"SSO_INITIATED\": 6, \"INVITE_LINK\": 7, \"AUTO_ACCEPT_LICENSE\": 8}, \"PACKAGE_EXTS\": [\".app\", \".band\", \".bundle\", \".curio\", \".dtbase\", \".framework\", \".graffle\", \".kext\", \".key\", \".keynote\", \".mapset\", \".mjdoc\", \".mpkg\", \".numbers\", \".omniplan\", \".oo3\", \".pages\", \".pkg\", \".plugin\", \".qdfm\", \".rtfd\", \".rwsw\", \".rwtheme\", \".scriv\", \".sketch\", \".ufo\", \".vpdoc\", \".xcodeproj\", \".xd\"], \"TakedownRequestTypes\": {\"UNKNOWN\": 0, \"DMCA\": 1, \"MALWARE\": 2, \"ILLEGAL\": 3, \"OTHER\": 4, \"SPAM\": 5, \"TERROR\": 6, \"CSAI\": 7, \"PHISHING\": 8, \"POTENTIAL_MALWARE\": 9}}");
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/python", "json", "{\"FILE_ACTIVITY_LOADING_MODE\": {\"USER_I18N\": \"USER_I18N\", \"FEEDBACK\": \"FEEDBACK\", \"PREVIEW_INFO\": \"PREVIEW_INFO\", \"FEEDBACK_METADATA\": \"FEEDBACK_METADATA\"}, \"RECENT_EVENT_TYPES\": {\"FILE_ADD\": 0, \"FILE_MOVE\": 1, \"FILE_EDIT\": 2, \"FILE_RENAME\": 3, \"FILE_RESTORE\": 4, \"FILE_MOUNT\": 5, \"FILE_UNMOUNT\": 6, \"FILE_SHARE\": 7, \"FILE_UNSHARE\": 8, \"FILE_PRIVATE_VIEW\": 9, \"FILE_SHARED_VIEW\": 10, \"FILE_COMMENT_ADD\": 11, \"PAPER_ADD\": 12, \"PAPER_EDIT\": 13, \"PAPER_COMMENT\": 14, \"PAPER_SHARE\": 15, \"PAPER_VIEW\": 16, \"FILE_SHARED_ADD\": 17, \"FILE_DELETE\": 18}, \"RECENT_EVENT_FILTER_TYPE\": {\"ALL\": 0, \"PHOTOS\": 1, \"VIDEOS\": 2, \"DOCUMENTS\": 3, \"COMMENTS\": 4, \"JUNK\": 5, \"UNCATEGORIZED\": 6, \"VISUAL_NOTES\": 7}, \"THUMBNAIL_SIZE_MODE\": {\"EXACT\": 1, \"STRICT\": 2, \"ABSTRACT\": 3, \"FIT_ONE\": 4, \"ORIGINAL\": 5, \"LEGACY\": 6, \"FIT_ONE_ABSTRACT\": 7, \"CUSTOM\": 8, \"FIT_ONE_RESTRICT\": 9, \"EXACT_NO_BACKGROUND\": 10, \"STRETCH\": 11}, \"THUMBNAIL_SIZES\": [\"16x16\", \"32x32\", \"48x48\", \"64x64\", \"70x70\", \"72x72\", \"75x75\", \"80x80\", \"100x100\", \"122x122\", \"128x128\", \"150x150\", \"154x154\", \"160x160\", \"154x274\", \"154x308\", \"178x178\", \"180x180\", \"196x196\", \"200x200\", \"224x224\", \"256x256\", \"256x456\", \"256x512\", \"274x154\", \"308x154\", \"318x416\", \"320x240\", \"320x320\", \"320x480\", \"320x568\", \"320x640\", \"360x360\", \"380x380\", \"359x100\", \"375x100\", \"392x392\", \"456x256\", \"478x267\", \"470x300\", \"480x320\", \"480x480\", \"512x256\", \"512x512\", \"568x320\", \"640x320\", \"640x384\", \"640x480\", \"640x640\", \"640x1136\", \"640x1280\", \"720x720\", \"718x200\", \"750x200\", \"784x784\", \"800x600\", \"960x640\", \"1024x768\", \"1024x1024\", \"1136x640\", \"1280x640\", \"1280x960\", \"1600x1200\", \"2048x1536\", \"800x800\", \"1280x1280\", \"2048x2048\", \"750x500\", \"1000x500\", \"1250x500\", \"1500x500\", \"1750x500\", \"2000x500\", \"256x1\", \"480x1\", \"720x1\", \"1280x1\", \"1600x1\", \"2048x1\", \"1200x1200\", \"1200x600\", \"3200x2400\"], \"FILE_REQUEST_NO_DEADLINE\": -1, \"REVISION_REASON\": {\"ADD\": 0, \"MOVE\": 1, \"EDIT\": 2, \"RENAME\": 3, \"RESTORE\": 4, \"MOUNT\": 5, \"UNMOUNT\": 6, \"SHARE\": 7, \"UNSHARE\": 8, \"DELETE\": 9, \"PREV_PURGED\": 10}, \"ACCOUNT_CAPTURE\": {\"OFF\": 0, \"INVITED_ONLY\": 1, \"ALL\": 2}, \"DOMAIN_VERIFICATION_STATUS\": {\"ERROR_VERIFYING\": 1, \"PENDING\": 2, \"VERIFYING\": 3, \"VERIFIED\": 4, \"ALREADY_CLAIMED\": 5}, \"MILLION_USER_COUNT\": \"500\", \"PUBLIC_DFB_COUNT\": \"400,000\", \"EU_COUNTRIES\": [\"pl\", \"cy\", \"tr\", \"nl\", \"no\", \"me\", \"uz\", \"af\", \"cz\", \"qa\", \"ro\", \"tm\", \"es\", \"lu\", \"kw\", \"sa\", \"ir\", \"by\", \"jo\", \"ad\", \"gr\", \"lb\", \"gb\", \"sm\", \"dk\", \"be\", \"kg\", \"mt\", \"iq\", \"lt\", \"pt\", \"fi\", \"de\", \"md\", \"ge\", \"al\", \"mc\", \"om\", \"lv\", \"fr\", \"mk\", \"rs\", \"pk\", \"ru\", \"li\", \"it\", \"am\", \"ae\", \"ba\", \"hu\", \"hr\", \"si\", \"ye\", \"at\", \"il\", \"bg\", \"is\", \"az\", \"se\", \"ch\", \"ua\", \"sk\", \"ie\", \"ee\"], \"SIGN_UP_FOR_TEAM_ONBOARDING_STATES\": {\"EmailVerification\": 0, \"Register\": 5, \"DesktopIntro\": 10, \"SetupSecondAccount\": 15, \"DesktopMigrationOption\": 20, \"ReturnToClient\": 25, \"EnterWorkEmail\": 30, \"TeamDiscovery\": 50, \"CreateTeam\": 100, \"InviteMembers\": 200, \"WaitJoinApproval\": 250, \"ClientInstall\": 300, \"BizUpsellInterstitial\": 310, \"ProUpsellInterstitial\": 320, \"DesktopDone\": 400, \"Done\": 10000}, \"USER_JOURNEY_SIGNUP_VARIANTS\": [\"VERIFY_EMAIL_ONLY\", \"ET_FREE\", \"ET_TRIAL\", \"ET_WORK\", \"BIZ_UPSELL_INTERSTITIAL\", \"PRO_UPSELL_INTERSTITIAL\", \"ON\"], \"TEAM_JOIN_SOURCE\": {\"NO_SOURCE\": 0, \"SHARED_LINK\": 1, \"SF_INVITE\": 2, \"FORCED_MIGRATION\": 3, \"DOMAIN_CAPTURE\": 4, \"SHARED_CONTENT_LINK\": 5, \"SSO_INITIATED\": 6, \"INVITE_LINK\": 7, \"AUTO_ACCEPT_LICENSE\": 8}, \"PACKAGE_EXTS\": [\".app\", \".band\", \".bundle\", \".curio\", \".dtbase\", \".framework\", \".graffle\", \".kext\", \".key\", \".keynote\", \".mapset\", \".mjdoc\", \".mpkg\", \".numbers\", \".omniplan\", \".oo3\", \".pages\", \".pkg\", \".plugin\", \".qdfm\", \".rtfd\", \".rwsw\", \".rwtheme\", \".scriv\", \".sketch\", \".ufo\", \".vpdoc\", \".xcodeproj\", \".xd\"], \"TakedownRequestTypes\": {\"UNKNOWN\": 0, \"DMCA\": 1, \"MALWARE\": 2, \"ILLEGAL\": 3, \"OTHER\": 4, \"SPAM\": 5, \"TERROR\": 6, \"CSAI\": 7, \"PHISHING\": 8, \"POTENTIAL_MALWARE\": 9}}");
         });
     });
 });
 </script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
     window.require(["js/edison/edison"], function (edisonModule) {
         edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/request", "json", "{\"LOGGED_OUT_X_DROPBOX_UID\": -1, \"IS_HTTP2\": true, \"PAGE_LOAD_TIME\": 1695735508, \"REQUEST_ID\": \"d217ab6892d64d17a4d6059a70c844ed\", \"REQUEST_START_TIME\": 1695735508461, \"REQUEST_TRACING_ENABLED\": false}");
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/request", "json", "{\"LOGGED_OUT_X_DROPBOX_UID\": -1, \"IS_HTTP2\": true, \"PAGE_LOAD_TIME\": 1695735549, \"REQUEST_ID\": \"4168a70d0c8f45309bcd9e6c21a2bb05\", \"REQUEST_START_TIME\": 1695735549964, \"REQUEST_TRACING_ENABLED\": false}");
         });
     });
 });
@@ -206,90 +185,6 @@ window.addRequireLoadCallback(function() {
     window.require(["js/edison/edison"], function (edisonModule) {
         edisonModule.Edison.waitUntilInitialized().then(function() {
             edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/time", "json", "{\"DATETIME_FORMAT\": \"yyyy/M/d HH:mm\", \"TIMEZONE_OFFSET\": 0, \"TIMEZONE\": \"\", \"DATE_FORMAT\": \"yyyy/M/d\", \"TIME_FORMAT\": \"HH:mm\"}");
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedPrefetch("EqoCCiVzaWdudXBfc2lnbmluLk1hZ2ljTGlua0VkaXNvblByZWZldGNoEhFHb29nbGVPbmVUYXBGZXRjaBrRARLOAVJlaHR0cHM6Ly93d3cuZHJvcGJveC5jb20vZS9zY2wvZmkvZW9zOTJvMmZneXM2Z2swZ2l6b2dsL2xlYzA1LnBkZj9ybGtleT0yaG9odmk4amN2anczZjhtOHZ1Z2ZhMm16JmRsPTBaZWh0dHBzOi8vd3d3LmRyb3Bib3guY29tL2Uvc2NsL2ZpL2VvczkybzJmZ3lzNmdrMGdpem9nbC9sZWMwNS5wZGY/cmxrZXk9MmhvaHZpOGpjdmp3M2Y4bTh2dWdmYTJteiZkbD0wKgtmaWxlX3ZpZXdlcjINc2NsX2ZpbGVfcGFnZQ==", "Cic4MDE2Njg3MjY4MTUuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20QARoCVjE=",  false );
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/deleted_files", "json", "{\"DELETED_FROM_FILTER_DEFAULT\": false}");
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedPrefetch("EqsCCixzdXBlcl9hZG1pbl9hbmRfZGVwbG95bWVudC5FZGlzb25JZGxlVGltZW91dBILSWRsZVRpbWVvdXQa0QESzgFSZWh0dHBzOi8vd3d3LmRyb3Bib3guY29tL2Uvc2NsL2ZpL2VvczkybzJmZ3lzNmdrMGdpem9nbC9sZWMwNS5wZGY/cmxrZXk9MmhvaHZpOGpjdmp3M2Y4bTh2dWdmYTJteiZkbD0wWmVodHRwczovL3d3dy5kcm9wYm94LmNvbS9lL3NjbC9maS9lb3M5Mm8yZmd5czZnazBnaXpvZ2wvbGVjMDUucGRmP3Jsa2V5PTJob2h2aThqY3ZqdzNmOG04dnVnZmEybXomZGw9MCoLZmlsZV92aWV3ZXIyDXNjbF9maWxlX3BhZ2U=", "",  false );
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedPrefetch("EqoCCiN3ZWJfcGxhdGZvcm0uV2ViUGxhdGZvcm1FZGlzb25GZXRjaBITRWRpc29uRGV2VG9vbHNGZXRjaBrRARLOAVJlaHR0cHM6Ly93d3cuZHJvcGJveC5jb20vZS9zY2wvZmkvZW9zOTJvMmZneXM2Z2swZ2l6b2dsL2xlYzA1LnBkZj9ybGtleT0yaG9odmk4amN2anczZjhtOHZ1Z2ZhMm16JmRsPTBaZWh0dHBzOi8vd3d3LmRyb3Bib3guY29tL2Uvc2NsL2ZpL2VvczkybzJmZ3lzNmdrMGdpem9nbC9sZWMwNS5wZGY/cmxrZXk9MmhvaHZpOGpjdmp3M2Y4bTh2dWdmYTJteiZkbD0wKgtmaWxlX3ZpZXdlcjINc2NsX2ZpbGVfcGFnZQ==", "IhAxNjk1NzM1NTA4NDkwNjU2",  false );
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/file_viewer_flows_experiments", "json", "{\"proto\": \"\"}");
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedPrefetch("ErQCCit1c2VyX3N1cnZleS5FZGlzb25Vc2VyU3VydmV5UHJlZmV0Y2hTZXJ2aWNlEhVFZGlzb25Vc2VyU3VydmV5RmV0Y2ga0QESzgFSZWh0dHBzOi8vd3d3LmRyb3Bib3guY29tL2Uvc2NsL2ZpL2VvczkybzJmZ3lzNmdrMGdpem9nbC9sZWMwNS5wZGY/cmxrZXk9MmhvaHZpOGpjdmp3M2Y4bTh2dWdmYTJteiZkbD0wWmVodHRwczovL3d3dy5kcm9wYm94LmNvbS9lL3NjbC9maS9lb3M5Mm8yZmd5czZnazBnaXpvZ2wvbGVjMDUucGRmP3Jsa2V5PTJob2h2aThqY3ZqdzNmOG04dnVnZmEybXomZGw9MCoLZmlsZV92aWV3ZXIyDXNjbF9maWxlX3BhZ2U=", "",  false );
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/login_and_register", "json", "{\"GOOGLE_LOGIN_DESKTOP\": \"ON_TOP\", \"APPLE_LOGIN_DESKTOP\": \"ON\", \"LENOVO_LOGIN_DESKTOP\": \"OFF\", \"REDIRECT_WINDOW_TOKEN\": \"Aa7GIfAP_mOQL2VUqhfmlNMXkQKGVZLrugNxXOgD9tNQaQ\", \"FUNCAPTCHA_PUBLIC_KEY\": \"419899FA-7FAF-5C1D-C027-BC34963E3A4F\", \"SHOULD_LOAD_FUNCAPTCHA\": true, \"FUNCAPTCHA_REGISTER_PUBLIC_KEY\": \"68CECE5D-F360-8653-CA80-3CF99353DDD2\", \"FUNCAPTCHA_PAYMENT_PUBLIC_KEY\": \"8AFFAA35-0217-4EF9-83C8-C62CF9EBCFB3\"}");
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/pdf_editing", "json", "{\"KIEV_FORCE_REPORTING_EXCLOG\": true, \"STORMCROW_VERSION_UPGRADING\": \"OFF\", \"STORMCROW_UPLOAD_SESSION_EXPERIMENT\": \"OFF\", \"STORMCROW_SELF_SIGN_VARIANT\": \"OFF\", \"STORMCROW_HIGHLIGHT_VARIANT\": \"OFF\", \"STORMCROW_SAVED_SIGNATURES_VARIANT\": \"OFF\", \"STORMCROW_SIGNATURE_FIELD_VARIANT\": \"OFF\", \"STORMCROW_TEXT_EDITING_VARIANT\": \"OFF\", \"STORMCROW_FREEFORM_DRAWING_VARIANT\": \"OFF\", \"STORMCROW_FILE_RENAME_VARIANT\": \"OFF\", \"STORMCROW_COPY_PASTE_ANNOTATION_VARIANT\": \"OFF\", \"STORMCROW_REDESIGN_SAVE_COPY_VARIANT\": \"OFF\", \"STORMCROW_FORM_BUILDING_VARIANT\": \"OFF\", \"STORMCROW_TEMPLATE_VARIANT\": \"OFF\", \"STORMCROW_ZOOM_GRID_VIEW_VARIANT\": \"OFF\", \"STORMCROW_PRINT_VARIANT\": \"OFF\", \"STORMCROW_EDITING_UNFURL_ACTIONS\": \"OFF\", \"STORMCROW_VISUAL_REFRESH_VARIANT\": \"OFF\", \"STORMCROW_PREVIEWS_VISUAL_REFRESH_VARIANT\": \"OFF\"}");
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/trademark", "json", "{\"TRADEMARK_BASIC\": \"Basic\", \"TRADEMARK_FAMILY\": \"Family\", \"TRADEMARK_PLUS\": \"Plus\", \"TRADEMARK_PROFESSIONAL\": \"Professional\", \"TRADEMARK_VAULT\": \"Vault\", \"TRADEMARK_TRANSFER\": \"Transfer\", \"TRADEMARK_SYNC_EVERYTHING\": \"Backup\", \"TRADEMARK_BUSINESS_LEGACY\": \"Legacy\", \"TRADEMARK_BUSINESS_STANDARD\": \"Standard\", \"TRADEMARK_BUSINESS_ADVANCED\": \"Advanced\", \"TRADEMARK_BUSINESS_ENTERPRISE\": \"Enterprise\", \"DROPBOX_BASIC\": \"Dropbox Basic\", \"DROPBOX_PLUS\": \"Dropbox Plus\", \"DROPBOX_FAMILY\": \"Dropbox Family\", \"DROPBOX_PROFESSIONAL\": \"Dropbox Professional\", \"DROPBOX_VAULT\": \"Dropbox Vault\", \"DROPBOX_TRANSFER\": \"Dropbox Transfer\", \"DROPBOX_SYNC_EVERYTHING\": \"Dropbox Backup\", \"TRADEMARK_BUSINESS\": \"Dropbox Business\", \"DROPBOX_ENTERPRISE\": \"Dropbox Enterprise\", \"DROPBOX_BUSINESS_LEGACY\": \"Dropbox Legacy\", \"DROPBOX_BUSINESS_STANDARD\": \"Dropbox Standard\", \"DROPBOX_BUSINESS_ADVANCED\": \"Dropbox Advanced\", \"DROPBOX_PAPER\": \"Dropbox\\u00a0Paper\", \"PROFESSIONAL_SHARING\": \"Showcase\", \"TRADEMARK_PASSWORDS\": \"Passwords\", \"DROPBOX_PASSWORDS\": \"Dropbox Passwords\", \"DROPBOX_HS_DBX_PRO_BUNDLE\": \"Dropbox Professional + eSign\", \"TRADEMARK_HS_DBX_PRO_BUNDLE\": \"Professional + eSign\", \"HELLOSIGN\": \"Dropbox Sign\", \"TRADEMARK_DS_DBX_TEAM_BUNDLE\": \"Standard + DocSend\", \"DROPBOX_DS_DBX_TEAM_BUNDLE\": \"Dropbox Standard + DocSend\", \"DOCSEND\": \"DocSend\", \"TRADEMARK_BASIC_EXTRA\": \"Basic Extra\", \"DROPBOX_BASIC_EXTRA\": \"Dropbox Basic Extra\", \"DROPBOX_ONE\": \"Dropbox One\", \"TRADEMARK_DBX_BUSINESS\": \"Business\", \"TRADEMARK_DBX_BUSINESS_PLUS\": \"Business Plus\"}");
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/webtiming", "json", "{\"LOG_TIMING_DELAY\": false, \"LOG_BROWSER_PERFORMANCE_INFO\": true}");
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/global_file_upload", "json", "{\"FILE_UPLOAD_USE_REDUX\": false, \"UPLOAD_HYBRID_MIGRATION\": \"OFF\", \"UPLOAD_HYBRID_MIGRATION_UNDER_64MB\": \"OFF\", \"SESSION_API_FOR_ALL_WEB_UPLOADS\": \"OFF\", \"UPLOAD_FAILURE_EMIT_EVENT\": false, \"UPLOAD_SUCCESS_EMIT_EVENT\": false, \"DISPLAY_UPLOAD_BYTES_COMPLETED\": false, \"WEB_UPLOAD_OPTIMISTIC_UPDATES\": false, \"SMOOTH_UPLOAD_PROGRESS_BAR\": false, \"UPLOADS_UDCL_DISABLE_DOUBLE_LOGGING\": false, \"SHARING_PATHWAY_HANDLE_UPLOAD_EVENT\": \"OFF\", \"UPLOAD_MAX_NETWORK_RETRIES\": \"OFF\", \"UPLOAD_DRAWER_REDESIGN\": \"OFF\", \"UPLOAD_FILE_LEVEL_COMMIT_RETRIES\": \"OFF\", \"UPLOAD_DRAWER_UX_IMPROVEMENTS\": \"OFF\"}");
-        });
-    });
-});
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
-    window.require(["js/edison/edison"], function (edisonModule) {
-        edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/web_experience_constants", "json", "{\"NAVIGATE_PAP\": false, \"REACT_ROUTER_PAP\": false, \"DEFAULT_UPLOAD_FOLDER\": \"OFF\", \"WEBXP_IA_RR_BROWSE\": \"OFF\", \"STARRED_PREFETCH_USE_STARRING_DIRECTLY\": false, \"WEBXP_IA_RR_PREVIEW_BROWSE\": \"OFF\", \"RECENTS_TABLE_REDESIGN\": \"OFF\", \"DEFAULT_DRAG_AND_DROP\": \"OFF\", \"RECENTS_FLUX_MIGRATION\": \"OFF\", \"HOME_REDUX_USE_STARRING\": false, \"RECENTS_AND_STARRED_IN_BROWSE\": \"OFF\", \"CONTENT_TILES\": \"OFF\", \"CONTENT_TILES_SEARCH\": \"OFF\", \"CONTENT_TILES_DISABLED_TILE\": \"OFF\", \"CONTENT_TILES_QUICK_ACTIONS\": \"OFF\", \"CONTENT_TILES_FOLDER_COLLAGE\": \"OFF\", \"FOLDER_COLLAGE_ASPECT_RATIO\": \"OFF\", \"CONTENT_TILES_INTERACTIVITY_VIDEO\": \"OFF\", \"CONTENT_TILES_INTERACTIVITY_PDF\": \"OFF\", \"RECENTS_WITH_FACETS\": \"OFF\", \"BROWSE_ON_CYPRESS\": \"SFJ_OTHER_USER\", \"BROWSE_CONTENT_SUGGESTIONS_VARIANT\": \"OFF\", \"THEME_PROVIDER_DETECT_MODE\": \"OFF\", \"THEME_PROVIDER_THEME\": \"OFF\", \"DIG_FEATURE_LEVEL\": \"OFF\", \"BROWSE_WITH_FACETS\": \"OFF\", \"SECTION_COMPONENT_BROWSE\": \"OFF\", \"FOLDER_LEVEL_FILTER\": \"OFF\", \"WEB_REDESIGN_GLOBAL_HEADER\": \"OFF\", \"BROWSE_DEFAULT_GRID_VIEW\": \"OFF\"}");
         });
     });
 });
@@ -324,6 +219,69 @@ window.addRequireLoadCallback(function() {
 </script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
     window.require(["js/edison/edison"], function (edisonModule) {
         edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedPrefetch("EqoCCiN3ZWJfcGxhdGZvcm0uV2ViUGxhdGZvcm1FZGlzb25GZXRjaBITRWRpc29uRGV2VG9vbHNGZXRjaBrRARLOAVJlaHR0cHM6Ly93d3cuZHJvcGJveC5jb20vZS9zY2wvZmkvZW9zOTJvMmZneXM2Z2swZ2l6b2dsL2xlYzA1LnBkZj9ybGtleT0yaG9odmk4amN2anczZjhtOHZ1Z2ZhMm16JmRsPTBaZWh0dHBzOi8vd3d3LmRyb3Bib3guY29tL2Uvc2NsL2ZpL2VvczkybzJmZ3lzNmdrMGdpem9nbC9sZWMwNS5wZGY/cmxrZXk9MmhvaHZpOGpjdmp3M2Y4bTh2dWdmYTJteiZkbD0wKgtmaWxlX3ZpZXdlcjINc2NsX2ZpbGVfcGFnZQ==", "IhAxNjk1NzM1NTQ5OTg4MjYy",  false );
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedPrefetch("EqoCCiVzaWdudXBfc2lnbmluLk1hZ2ljTGlua0VkaXNvblByZWZldGNoEhFHb29nbGVPbmVUYXBGZXRjaBrRARLOAVJlaHR0cHM6Ly93d3cuZHJvcGJveC5jb20vZS9zY2wvZmkvZW9zOTJvMmZneXM2Z2swZ2l6b2dsL2xlYzA1LnBkZj9ybGtleT0yaG9odmk4amN2anczZjhtOHZ1Z2ZhMm16JmRsPTBaZWh0dHBzOi8vd3d3LmRyb3Bib3guY29tL2Uvc2NsL2ZpL2VvczkybzJmZ3lzNmdrMGdpem9nbC9sZWMwNS5wZGY/cmxrZXk9MmhvaHZpOGpjdmp3M2Y4bTh2dWdmYTJteiZkbD0wKgtmaWxlX3ZpZXdlcjINc2NsX2ZpbGVfcGFnZQ==", "Cic4MDE2Njg3MjY4MTUuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20QARoCVjE=",  false );
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/login_and_register", "json", "{\"GOOGLE_LOGIN_DESKTOP\": \"ON_TOP\", \"APPLE_LOGIN_DESKTOP\": \"ON\", \"LENOVO_LOGIN_DESKTOP\": \"OFF\", \"REDIRECT_WINDOW_TOKEN\": \"Aa7GIfAP_mOQL2VUqhfmlNMXkQKGVZLrugNxXOgD9tNQaQ\", \"FUNCAPTCHA_PUBLIC_KEY\": \"419899FA-7FAF-5C1D-C027-BC34963E3A4F\", \"SHOULD_LOAD_FUNCAPTCHA\": true, \"FUNCAPTCHA_REGISTER_PUBLIC_KEY\": \"68CECE5D-F360-8653-CA80-3CF99353DDD2\", \"FUNCAPTCHA_PAYMENT_PUBLIC_KEY\": \"8AFFAA35-0217-4EF9-83C8-C62CF9EBCFB3\"}");
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/pdf_editing", "json", "{\"KIEV_FORCE_REPORTING_EXCLOG\": true, \"STORMCROW_VERSION_UPGRADING\": \"OFF\", \"STORMCROW_UPLOAD_SESSION_EXPERIMENT\": \"OFF\", \"STORMCROW_SELF_SIGN_VARIANT\": \"OFF\", \"STORMCROW_HIGHLIGHT_VARIANT\": \"OFF\", \"STORMCROW_SAVED_SIGNATURES_VARIANT\": \"OFF\", \"STORMCROW_SIGNATURE_FIELD_VARIANT\": \"OFF\", \"STORMCROW_TEXT_EDITING_VARIANT\": \"OFF\", \"STORMCROW_FREEFORM_DRAWING_VARIANT\": \"OFF\", \"STORMCROW_FILE_RENAME_VARIANT\": \"OFF\", \"STORMCROW_COPY_PASTE_ANNOTATION_VARIANT\": \"OFF\", \"STORMCROW_REDESIGN_SAVE_COPY_VARIANT\": \"OFF\", \"STORMCROW_FORM_BUILDING_VARIANT\": \"OFF\", \"STORMCROW_TEMPLATE_VARIANT\": \"OFF\", \"STORMCROW_ZOOM_GRID_VIEW_VARIANT\": \"OFF\", \"STORMCROW_PRINT_VARIANT\": \"OFF\", \"STORMCROW_EDITING_UNFURL_ACTIONS\": \"OFF\", \"STORMCROW_VISUAL_REFRESH_VARIANT\": \"OFF\", \"STORMCROW_PREVIEWS_VISUAL_REFRESH_VARIANT\": \"OFF\"}");
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/trademark", "json", "{\"TRADEMARK_BASIC\": \"Basic\", \"TRADEMARK_FAMILY\": \"Family\", \"TRADEMARK_PLUS\": \"Plus\", \"TRADEMARK_PROFESSIONAL\": \"Professional\", \"TRADEMARK_VAULT\": \"Vault\", \"TRADEMARK_TRANSFER\": \"Transfer\", \"TRADEMARK_SYNC_EVERYTHING\": \"Backup\", \"TRADEMARK_BUSINESS_LEGACY\": \"Legacy\", \"TRADEMARK_BUSINESS_STANDARD\": \"Standard\", \"TRADEMARK_BUSINESS_ADVANCED\": \"Advanced\", \"TRADEMARK_BUSINESS_ENTERPRISE\": \"Enterprise\", \"DROPBOX_BASIC\": \"Dropbox Basic\", \"DROPBOX_PLUS\": \"Dropbox Plus\", \"DROPBOX_FAMILY\": \"Dropbox Family\", \"DROPBOX_PROFESSIONAL\": \"Dropbox Professional\", \"DROPBOX_VAULT\": \"Dropbox Vault\", \"DROPBOX_TRANSFER\": \"Dropbox Transfer\", \"DROPBOX_SYNC_EVERYTHING\": \"Dropbox Backup\", \"TRADEMARK_BUSINESS\": \"Dropbox Business\", \"DROPBOX_ENTERPRISE\": \"Dropbox Enterprise\", \"DROPBOX_BUSINESS_LEGACY\": \"Dropbox Legacy\", \"DROPBOX_BUSINESS_STANDARD\": \"Dropbox Standard\", \"DROPBOX_BUSINESS_ADVANCED\": \"Dropbox Advanced\", \"DROPBOX_PAPER\": \"Dropbox\\u00a0Paper\", \"PROFESSIONAL_SHARING\": \"Showcase\", \"TRADEMARK_PASSWORDS\": \"Passwords\", \"DROPBOX_PASSWORDS\": \"Dropbox Passwords\", \"DROPBOX_HS_DBX_PRO_BUNDLE\": \"Dropbox Professional + eSign\", \"TRADEMARK_HS_DBX_PRO_BUNDLE\": \"Professional + eSign\", \"HELLOSIGN\": \"Dropbox Sign\", \"TRADEMARK_DS_DBX_TEAM_BUNDLE\": \"Standard + DocSend\", \"DROPBOX_DS_DBX_TEAM_BUNDLE\": \"Dropbox Standard + DocSend\", \"DOCSEND\": \"DocSend\", \"TRADEMARK_BASIC_EXTRA\": \"Basic Extra\", \"DROPBOX_BASIC_EXTRA\": \"Dropbox Basic Extra\", \"DROPBOX_ONE\": \"Dropbox One\", \"TRADEMARK_DBX_BUSINESS\": \"Business\", \"TRADEMARK_DBX_BUSINESS_PLUS\": \"Business Plus\"}");
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/webtiming", "json", "{\"LOG_TIMING_DELAY\": false, \"LOG_BROWSER_PERFORMANCE_INFO\": true}");
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/contacts", "json", "{\"LEGACY_CACHE_LIMIT\": \"OFF\", \"MERGE_SEARCH_ALLOWED\": {}}");
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/sharing", "json", "{\"GOLDEN_GATE\": {\"HAS_CONTENT_MANAGER_AND_SUPER_ADMIN\": {}, \"HAS_CONTENT_MANAGER_CDM\": {}, \"HAS_CONTENT_MANAGER_CDM_IN_TSD\": {}, \"HAS_NEW_OWNERSHIP_MODEL\": {}, \"CAN_RESTORE_FOLDERS_IN_CM\": {}, \"SHARING_TOTAL_LIMIT\": 1000}, \"SHARING_EXPERIMENTS\": {\"FIX_MAX_ACCOUNT_BATCH_SIZE\": false, \"USER_LEVEL_SHARING_SETTINGS\": \"OFF\"}, \"SHARING_MODAL\": {\"SHOW_UPGRADE_TO_BIZ_BANNER\": {}}, \"TRUELINK\": {\"TRUELINK_BROWSE_LINK_ICON\": {}, \"NO_COMMENT_ENABLED\": {}}, \"ShareTibActionOriginType\": {\"BROWSE_FILE_ROW\": 1, \"FILE_ROW_SHARE_MENU\": 2, \"PREVIEW_PAGE\": 3, \"NOTIFICATION_WEB\": 4, \"RECENTS\": 5, \"SHARE\": 6, \"GRANT_ACCESS\": 8, \"DESKTOP_CLIENT\": 9, \"WIZARD\": 10, \"OFFICE_INTEGRATION\": 11, \"LEGACY_BROWSE\": 12, \"SHARE_LINK_MODAL\": 13, \"BROWSE_SHARED_FOLDER_BANNER\": 14, \"BROWSE_GLOBAL_ACTIONS\": 15, \"EVENTS_PAGE\": 16, \"BROWSE_FILE_ACTIONS\": 17, \"CONTENT_MANAGER\": 18, \"PARENT_FOLDER_MODAL\": 19, \"OUT_OF_QUOTA_MODAL\": 20, \"LINKS_PAGE\": 21, \"PREVIEW_PAGE_FACEPILE\": 22, \"BROWSE_FILE_FACEPILE\": 23, \"SHARE_PAGE_FROM_EMAIL\": 24, \"SHARE_PAGE_FROM_NOTIFICATION_WEB\": 25, \"COPY_SCL_LINK_MODAL\": 26, \"BROWSE_NEW_FOLDER_MODAL\": 27, \"STARRED\": 28, \"AUTO_MOUNT\": 29, \"BROWSE_FILE_ROW_BUTTON\": 30, \"BROWSE_FILE_ROW_OVERFLOW_MENU\": 31, \"EXTERNAL_SHARING_PAGE\": 32, \"SHARE_TO_UPLOAD\": 35, \"COPY_LINK_FROM_UPLOAD_MODAL\": 36, \"SHARING_PREVIEW_PAGE\": 37, \"SHARE_PAGE_INLINE\": 38, \"POST_DOWNLOAD_MODAL\": 40, \"FILE_REQUESTS\": 42, \"BROWSE_COPY_ACTION\": 43, \"BROWSE_MOVE_ACTION\": 44, \"FROM_EMAIL\": 45, \"REQUEST_ACCESS_MODAL\": 46, \"CREATE_SHARED_FOLDER_MODAL\": 47, \"DEFAULT_SHARING_SETTINGS_TAB\": 48, \"SAVE_TO_DROPBOX\": 49, \"PREVIEW_PAGE_FILE_ROW_OVERFLOW_MENU\": 50, \"PREVIEW_PAGE_FILE_ROW_BUTTON\": 51, \"JOIN_FOLDER_BUTTON\": 52, \"PREVIEW_PAGE_GRID_SINGLE_FILE_ACTION\": 53, \"PREVIEW_PAGE_TITLEBAR\": 54, \"HARMONY\": 101, \"NOTIFICATION_CLIENT\": 102, \"NATIVE_SHARE_CLIENT\": 103, \"FILESYSTEM\": 104, \"NOTIFICATION_MOBILE\": 201, \"WEB_MOBILE\": 202, \"IN_APP\": 210, \"EMAIL\": 301, \"GMAIL_PLUGIN\": 302, \"OUTLOOK_ADDIN\": 303, \"PAPER_INTEGRATION\": 401, \"GOOGLE_DSS\": 501, \"TRELLO_FILE_VIEWER\": 601, \"SHARING_SDK_SANDBOX\": 700, \"SHARING_SDK_PAPER\": 701, \"SHARING_SDK_DESKTOP\": 702, \"CONTROLLED_ACCESS_SU_BANNER\": 803, \"UPLOAD_BUTTON\": 804, \"UPLOAD_JOIN_FOLDER_MODAL\": 805, \"UPLOAD_SNACKBAR\": 806, \"COLLECTIONS\": 903}}");
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/viewer", "json", "{\"DEFAULT_ROOT_NAME\": \"Dropbox\", \"PERSONAL_ROLE_STRING\": \"\\u4e2a\\u4eba\", \"_viewer_properties\": {\"_user_data\": [], \"_additional_linked_users_data\": [], \"is_team_assume_user_session\": false, \"is_assume_user_session\": false}, \"prompt_ha_hiding\": true, \"LOCALE\": \"GB\"}");
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
             edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/file_viewer_feature_experiments", "json", "{\"proto\": \"igIDT0ZGugIDT0ZGkgMDT0ZGsgMDT0ZGygQDT0ZG2gQDT0ZG6gQCT07yBANPRkaSBQJWMZoFA09GRroFA09GRsoFA09GRtIFA09GRuIFA09GRvoFA09GRoIGA09GRpIGA09GRpgGAaAGAbIGA09GRroGA09GRsoGA09GRtIGA09GRtoGA09GRuIGA09GRuoGA09GRvIGA09GRvoGA09GRoIHB0NPTlRST0yKBwNPRkaSBwNPRkaaBwNPRkaiBwJPTqoHA09GRrIHA09GRg==\"}");
         });
     });
@@ -338,7 +296,49 @@ window.addRequireLoadCallback(function() {
 </script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
     window.require(["js/edison/edison"], function (edisonModule) {
         edisonModule.Edison.waitUntilInitialized().then(function() {
-            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/files_spa", "json", "{\"USE_FOR_YOU_PAGE\": false, \"USE_MULTIPRODUCT_ONBOARDING_FOR_YOU_PAGE\": false, \"USE_RR_FOR_PREVIEW_STANDALONE\": false, \"TTVC_SYNTHETIC_RENDER\": \"OFF\", \"CONTENT_SUGGESTIONS_CVC_MEASUREMENT\": false, \"BROWSE_FACEPILE_CVC_MEASUREMENT\": false, \"BROWSE_FILES_TABLE_CVC_MEASUREMENT\": false, \"BROWSE_USE_REACT_QUERY\": false, \"USE_SPA_PREVIEW_CAROUSEL\": false, \"PHOTOS_USE_REACT_QUERY\": false, \"BROWSE_USE_FILEGPT_ENTRYPOINT\": false, \"BROWSE_USE_FILEGPT_IN_SIDEBAR\": false, \"USE_MAF_FOR_FILE_VIEWER\": false, \"USE_SHARE_BUTTON_DISPLAY\": false, \"USE_SPA_FOR_SIGNATURES\": false}");
+            edisonModule.Edison.registerStreamedPrefetch("ErQCCit1c2VyX3N1cnZleS5FZGlzb25Vc2VyU3VydmV5UHJlZmV0Y2hTZXJ2aWNlEhVFZGlzb25Vc2VyU3VydmV5RmV0Y2ga0QESzgFSZWh0dHBzOi8vd3d3LmRyb3Bib3guY29tL2Uvc2NsL2ZpL2VvczkybzJmZ3lzNmdrMGdpem9nbC9sZWMwNS5wZGY/cmxrZXk9MmhvaHZpOGpjdmp3M2Y4bTh2dWdmYTJteiZkbD0wWmVodHRwczovL3d3dy5kcm9wYm94LmNvbS9lL3NjbC9maS9lb3M5Mm8yZmd5czZnazBnaXpvZ2wvbGVjMDUucGRmP3Jsa2V5PTJob2h2aThqY3ZqdzNmOG04dnVnZmEybXomZGw9MCoLZmlsZV92aWV3ZXIyDXNjbF9maWxlX3BhZ2U=", "",  false );
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/campaigns_orchestration", "json", "{\"CAMPAIGNS_ORCHESTRATION_CLIENT_ROLLOUT\": true}");
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/file_actions", "json", "{\"BATCH_FILEOPS_PARALLEL_AWAIT\": false}");
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedPrefetch("EqsCCixzdXBlcl9hZG1pbl9hbmRfZGVwbG95bWVudC5FZGlzb25JZGxlVGltZW91dBILSWRsZVRpbWVvdXQa0QESzgFSZWh0dHBzOi8vd3d3LmRyb3Bib3guY29tL2Uvc2NsL2ZpL2VvczkybzJmZ3lzNmdrMGdpem9nbC9sZWMwNS5wZGY/cmxrZXk9MmhvaHZpOGpjdmp3M2Y4bTh2dWdmYTJteiZkbD0wWmVodHRwczovL3d3dy5kcm9wYm94LmNvbS9lL3NjbC9maS9lb3M5Mm8yZmd5czZnazBnaXpvZ2wvbGVjMDUucGRmP3Jsa2V5PTJob2h2aThqY3ZqdzNmOG04dnVnZmEybXomZGw9MCoLZmlsZV92aWV3ZXIyDXNjbF9maWxlX3BhZ2U=", "",  false );
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/global_file_upload", "json", "{\"FILE_UPLOAD_USE_REDUX\": false, \"UPLOAD_HYBRID_MIGRATION\": \"OFF\", \"UPLOAD_HYBRID_MIGRATION_UNDER_64MB\": \"OFF\", \"SESSION_API_FOR_ALL_WEB_UPLOADS\": \"OFF\", \"UPLOAD_FAILURE_EMIT_EVENT\": false, \"UPLOAD_SUCCESS_EMIT_EVENT\": false, \"DISPLAY_UPLOAD_BYTES_COMPLETED\": false, \"WEB_UPLOAD_OPTIMISTIC_UPDATES\": false, \"SMOOTH_UPLOAD_PROGRESS_BAR\": false, \"UPLOADS_UDCL_DISABLE_DOUBLE_LOGGING\": false, \"SHARING_PATHWAY_HANDLE_UPLOAD_EVENT\": \"OFF\", \"UPLOAD_MAX_NETWORK_RETRIES\": \"OFF\", \"UPLOAD_DRAWER_REDESIGN\": \"OFF\", \"UPLOAD_FILE_LEVEL_COMMIT_RETRIES\": \"OFF\", \"UPLOAD_DRAWER_UX_IMPROVEMENTS\": \"OFF\"}");
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/web_experience_constants", "json", "{\"NAVIGATE_PAP\": false, \"REACT_ROUTER_PAP\": false, \"DEFAULT_UPLOAD_FOLDER\": \"OFF\", \"WEBXP_IA_RR_BROWSE\": \"OFF\", \"STARRED_PREFETCH_USE_STARRING_DIRECTLY\": false, \"WEBXP_IA_RR_PREVIEW_BROWSE\": \"OFF\", \"RECENTS_TABLE_REDESIGN\": \"OFF\", \"DEFAULT_DRAG_AND_DROP\": \"OFF\", \"RECENTS_FLUX_MIGRATION\": \"OFF\", \"HOME_REDUX_USE_STARRING\": false, \"RECENTS_AND_STARRED_IN_BROWSE\": \"OFF\", \"CONTENT_TILES\": \"OFF\", \"CONTENT_TILES_SEARCH\": \"OFF\", \"CONTENT_TILES_DISABLED_TILE\": \"OFF\", \"CONTENT_TILES_QUICK_ACTIONS\": \"OFF\", \"CONTENT_TILES_FOLDER_COLLAGE\": \"OFF\", \"FOLDER_COLLAGE_ASPECT_RATIO\": \"OFF\", \"CONTENT_TILES_INTERACTIVITY_VIDEO\": \"OFF\", \"CONTENT_TILES_INTERACTIVITY_PDF\": \"OFF\", \"RECENTS_WITH_FACETS\": \"OFF\", \"BROWSE_ON_CYPRESS\": \"SFJ_OTHER_USER\", \"BROWSE_CONTENT_SUGGESTIONS_VARIANT\": \"OFF\", \"THEME_PROVIDER_DETECT_MODE\": \"OFF\", \"THEME_PROVIDER_THEME\": \"OFF\", \"DIG_FEATURE_LEVEL\": \"OFF\", \"BROWSE_WITH_FACETS\": \"OFF\", \"SECTION_COMPONENT_BROWSE\": \"OFF\", \"FOLDER_LEVEL_FILTER\": \"OFF\", \"WEB_REDESIGN_GLOBAL_HEADER\": \"OFF\", \"BROWSE_DEFAULT_GRID_VIEW\": \"OFF\"}");
+        });
+    });
+});
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=">window.addRequireLoadCallback(function() {
+    window.require(["js/edison/edison"], function (edisonModule) {
+        edisonModule.Edison.waitUntilInitialized().then(function() {
+            edisonModule.Edison.registerStreamedDataModule("metaserver/static/js/modules/constants/file_viewer_flows_experiments", "json", "{\"proto\": \"\"}");
         });
     });
 });
@@ -356,5 +356,5 @@ window.addRequireLoadCallback(function() {
         });
     });
 });
-</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=" async src="/page_success/end?edison_page_name=scl_file_page&amp;path=%2Fe%2Fscl%2Ffi%2Feos92o2fgys6gk0gizogl%2Flec05.pdf&amp;request_id=d217ab6892d64d17a4d6059a70c844ed&amp;time=1695735509" crossorigin="anonymous"></script>
+</script><script nonce="bVE58wvVZZUk0rxpvA/ZQVT0cCY=" async src="/page_success/end?edison_page_name=scl_file_page&amp;path=%2Fe%2Fscl%2Ffi%2Feos92o2fgys6gk0gizogl%2Flec05.pdf&amp;request_id=4168a70d0c8f45309bcd9e6c21a2bb05&amp;time=1695735551" crossorigin="anonymous"></script>
 </body></html><!--status=200-->
